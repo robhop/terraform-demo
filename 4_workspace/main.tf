@@ -7,7 +7,7 @@ data "azurerm_resource_group" "demo" {
 }
 
 resource "azurerm_app_service_plan" "demo" {
-  name                = "demo-appserviceplan"
+  name                = "${var.name[terraform.workspace]}"
   resource_group_name = "${data.azurerm_resource_group.demo.name}"
   location            = "${data.azurerm_resource_group.demo.location}"
 

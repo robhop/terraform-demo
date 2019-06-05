@@ -1,7 +1,5 @@
-# Terraform #
+# Workspace #
 
-* tf files and tfvar files.
-* terraform init
-* az login
-* plan apply
-* state
+* default workspace
+* terraform.workspace
+* using map variables
